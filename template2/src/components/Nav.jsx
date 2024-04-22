@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoIosSearch } from "react-icons/io";
 import { FiShoppingCart } from "react-icons/fi";
-import { FaCircleUser, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import {
+  FaCircleUser,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa6";
 import { AiOutlineClose } from "react-icons/ai";
 const Nav = () => {
   const [burgerclick, setburgerclick] = useState(true);
@@ -45,17 +50,19 @@ const Nav = () => {
                 </div>
               ))}
               <div className="flex justify-center uppercase text-xs gap-2">
-              <div>
-              <FaInstagram className="text-2xl" />
-            </div>
-            <div>
-              <FaGithub className="text-2xl" />
-            </div>
-            <div>
-              <FaLinkedin className="text-2xl" />
-            </div>
+                <div>
+                  <FaInstagram className="text-2xl" />
+                </div>
+                <div>
+                  <FaGithub className="text-2xl" />
+                </div>
+                <div>
+                  <FaLinkedin className="text-2xl" />
+                </div>
               </div>
-              <div className="flex justify-center uppercase text-xs -mt-10">&copy;2020-2024- All Rights Reserved</div>
+              <div className="flex justify-center uppercase text-xs -mt-10">
+                &copy;2020-2024- All Rights Reserved
+              </div>
             </div>
           </div>
           <div className="hidden lg:flex text-3xl">BLISS365</div>
@@ -84,6 +91,12 @@ const Nav = () => {
             <FiShoppingCart className="text-3xl" />
           </div>
         </div>
+      </div>
+      <div className="absolute top-1/3 p-6 max-md:text-5xl md:text-7xl  flex font-bold tracking-tighter justify-center">
+        HUNTER DOES NOT SET THE SAME TRAP FOR PIGS,FOX & LIONS.
+      </div>
+      <div className="absolute bottom-1/3 right-6 p-2 max-md:text-5xl md:text-7xl  flex justify-center font-bold">
+        ~R.A
       </div>
     </div>
   );
